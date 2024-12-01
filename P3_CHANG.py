@@ -83,6 +83,6 @@ print('____CS verification____')
 print(f"Complementary Slackness Satisfied (Primal): {all(CS_primal)}")
 print(f"Complementary Slackness Satisfied (Dual): {all(CS_dual)}")
 
-print(f"Q = {Q} {'is the solution' if all(CS_dual) and all(CS_primal) else 'is not the solution'}")
+print(f"Q = {Q} {'is the solution' if all(CS_dual) and all(CS_primal) and all(feasibility) else 'is not the solution'}")
 
 
